@@ -40,4 +40,7 @@ limitations under the License.
   <include file="$(find autorally_description)/launch/rviz.launch">
     <arg name="namespace" value="$(arg namespace)"/>
   </include>
+
+  <node pkg="tf" type="static_transform_publisher" name="map_broadcaster" args="0 -8.5 0.3 0 0 0.785498 map base_link 100" />
+
 </launch>
